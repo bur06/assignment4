@@ -1,0 +1,40 @@
+/*===================================
+
+universal styling
+
+===================================*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  font-family:'Open Sans', sans-serif;
+}
+
+/*===================================
+
+positional styling
+
+===================================*/
+
+main,
+.background {
+  position: relative;
+  margin: top;
+  min-height: 100vh;
+}
+
+header {
+  position: absolute;
+  padding: 30px;
+  z-index: 99;
+
+}
