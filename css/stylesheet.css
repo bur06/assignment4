@@ -10,15 +10,24 @@ universal styling
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-  overflow: hidden;
-}
-
 body {
   height: 100%;
   font-family:'Open Sans', Arial, sans-serif;
   object-fit: cover;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+  font-color: black;
+  padding: 10px 0;
+}
+
+p {
+  font-size: 18px;
+  font-color: black;
+  line-height: 140%;
+  padding: 15px 0;
 }
 
 /*===================================
@@ -27,12 +36,12 @@ positional styling
 
 ===================================*/
 
-main,
 .background {
   position: relative;
   margin: 0 auto;
   max-width: 1920;
   min-height: 100vh;
+  z-index: 2;
 }
 
 header {
@@ -45,21 +54,51 @@ header {
 .left-side {
   display: inline-block;
   width: 100px;
-  padding: 20px;
+  margin: 20px;
+  position: fixed;
 }
 
 .right-side {
   display: inline-block;
-  width: 85%;
+  width: 95%;
   vertical-align: top;
-  padding: 40px 20px 20px;
+  margin: 40px 10px;
   font-size: 20px;
   font-weight: bold;
   text-align: right;
 }
+
+.container {
+  position: absolute;
+  margin: 0 auto;
+  width: 80%;
+  top: 0;
+  margin-left: 125px;
+  vertical-align: bottom;
+  z-index: 99;
+}
+
+.column1,
+.column2,
+.column3 {
+  display: inline-block;
+  width: 29%;
+  padding: 10px;
+  margin-left: 30px;
+  vertical-align: text-top;
+  z-index: 90;
+}
+
 
 /*===================================
 
 column styling
 
 ===================================*/
+.container {
+  margin-top: 125px;
+  align-items: center;
+  background-color: #efebe9;
+  opacity: 70%;
+  z-index: 99;
+}
