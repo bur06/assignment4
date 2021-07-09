@@ -7,6 +7,7 @@ universal styling
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -16,7 +17,8 @@ html {
 
 body {
   height: 100%;
-  font-family:'Open Sans', sans-serif;
+  font-family:'Open Sans', Arial, sans-serif;
+  object-fit: cover;
 }
 
 /*===================================
@@ -28,13 +30,36 @@ positional styling
 main,
 .background {
   position: relative;
-  margin: top;
+  margin: 0 auto;
+  max-width: 1920;
   min-height: 100vh;
 }
 
 header {
   position: absolute;
-  padding: 30px;
+  top: 0;
+  width: 100%;
   z-index: 99;
-
 }
+
+.left-side {
+  display: inline-block;
+  width: 100px;
+  padding: 20px;
+}
+
+.right-side {
+  display: inline-block;
+  width: 85%;
+  vertical-align: top;
+  padding: 40px 20px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+}
+
+/*===================================
+
+column styling
+
+===================================*/
