@@ -19,13 +19,11 @@ body {
 h2 {
   font-size: 25px;
   font-weight: bold;
-  font-color: black;
   padding: 10px 0;
 }
 
 p {
   font-size: 18px;
-  font-color: black;
   line-height: 140%;
   padding: 15px 0;
 }
@@ -38,7 +36,7 @@ positional styling
 .background {
   position: relative;
   margin: 0 auto;
-  max-width: 1920;
+  max-width: 1920px;
   min-height: 100vh;
   z-index: 2;
 }
@@ -69,7 +67,8 @@ footer {
 
 .float-left {
   float: left;
-  margin: 10px 30px;
+  margin: 0 30px;
+  padding-top: 45px;
   font-size: 20px;
   font-weight: bolder;
   vertical-align: baseline;
@@ -77,7 +76,8 @@ footer {
 
 .float-right {
   float: right;
-  margin: 30px 30px 0;
+  margin: 0 30px;
+  padding-top: 40px;
   vertical-align: baseline;
 }
 
@@ -102,7 +102,7 @@ header styling
   font-size: 22px;
   font-weight: bold;
   text-align: right;
-  transition: .3s;
+  transition: 1s;
 }
 
 .left-side:hover {
@@ -111,7 +111,7 @@ header styling
 }
 
 .right-side:hover {
-  animation: drive 4s reverse ease linear;
+  animation: drive 1s reverse ease;
   background: black;
   border-radius: 5px;
   width: 80%;
@@ -121,10 +121,10 @@ header styling
 
 @keyframes drive {
   from {
-    transform: transformx(5px);
+    transform: translateX(5px);
   }
   to {
-    transform: transformx(-20px);
+    transform: translateX(-20px);
   }
 }
 
@@ -138,7 +138,7 @@ column styling
   align-items: center;
   background-color: #efebe9;
   border-radius: 15px;
-  box-shadow: 8px 8px 10px black;
+  box-shadow: 6px 8px 10px black;
   opacity: 75%;
   z-index: 99;
 }
